@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+<body>
+  <div class="min-h-[100vh] flex items-center justify-center px-6 bg-main-bg">
+    <main class="max-w-[350px] flex flex-col justify-center gap-4 p-6 rounded-xl bg-card-bg ">
+      <img 
+        src="./images/image-equilibrium.jpg"
+        alt="equilibrium" 
+        class="w-full aspect-square rounded-lg"
+      />
+      <h2 class="font-semibold mt-2 text-[22px] text-white">Equilibrium #3429</h2>
+      <p class="font-light text-base text-soft-blue sm:text-lg">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flex items-center justify-between pb-6 border-b-[1px] border-line">
+        <div class="flex items-center justify-between gap-2">
+          <img 
+            src="./images/icon-ethereum.svg" 
+            alt="ethereum"
+          />
+          <span class="font-semibold text-cyan text-base">0.041 ETH</span>
+        </div>
+        <div class="flex items-center justify-between gap-2">
+          <img 
+            src="./images/icon-clock.svg" 
+            alt="clock" 
+          />
+          <span class="font-normal text-soft-blue text-base">3 days left</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <img 
+          src="./images/image-avatar.png" 
+          alt="avatar"
+          class="w-[32px] aspect-square border-[1px] border-white rounded-full"
+        />
+        <p class="text-soft-blue font-normal text-base">
+          Creation of&nbsp;
+          <span class="font-semibold text-white">Jules Wyvern</span>
+        </p>
+      </div> 
+    </main>
+  </div>
+</body>
+</html>
