@@ -554,6 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-full {
+  bottom: 100%;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -564,6 +576,10 @@ video {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .min-h-\[100vh\] {
@@ -580,6 +596,10 @@ video {
 
 .max-w-\[350px\] {
   max-width: 350px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -604,6 +624,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -641,9 +665,25 @@ video {
   background-color: hsl(216 50% 16% / var(--tw-bg-opacity));
 }
 
+.bg-cyan-layer {
+  background-color: hsla(178, 100%, 50%, 50%);
+}
+
 .bg-main-bg {
   --tw-bg-opacity: 1;
   background-color: hsl(217 54% 11% / var(--tw-bg-opacity));
+}
+
+.bg-view {
+  background-image: url('../images/icon-view.svg');
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-6 {
@@ -695,8 +735,31 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 body {
   font-family: "Outfit";
+}
+
+.hover\:text-cyan:hover {
+  --tw-text-opacity: 1;
+  color: hsl(178 100% 50% / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:bottom-0 {
+  bottom: 0px;
+}
+
+.group:hover .group-hover\:h-full {
+  height: 100%;
 }
 
 @media (min-width: 640px) {
